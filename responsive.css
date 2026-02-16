@@ -1,138 +1,117 @@
-/* Responsive CSS file styles defined for smaller width devices */
-/* CSS for tablet devices */
-@media screen and (min-width: 576px) and (max-width: 820px) {
-    .logo {
-        padding: 0 3rem;
-    }
-    .hamburger {
-        display: block;
-        padding: 0 3rem;
-    }
-    .menu {
-        position: absolute;
-        right: 0;
-        padding: 0 3rem;
-        top: 75px;
-        background-image: linear-gradient(180deg, #74D7BB, #53C8B6, #35A99C);
-        display: none;
-        transition: all 0.25s;
-    }
-    .menu .menu-list {
-        flex-direction: column;
-    }
-    .portfolio {
-        padding: 0;
+/* Responsive Design */
+
+/* Tablet Landscape / Small Laptops (1024px) */
+@media screen and (max-width: 1024px) {
+    section {
+        padding: 4rem 5%;
     }
 
     .about {
-        flex-direction: column;
-    }
-    .about .about-text {
-        padding: 2rem;
-    }
-    .about .about-image img {
-        padding: 2rem;
-    }
-    .services {
-        padding: 0;
-    }
-    .my-row {
-        gap: 10px;
-    }
-
-    .my-row .my-col {
-        text-align: center;
-        width: 35%;
-    }
-}
-/* CSS for mobile devices */
-@media screen and (min-width: 280px) and (max-width: 576px) {
-    .hero {
-        justify-content: center;
-        color: #fff;
-        background-image: radial-gradient(circle, rgb(15 14 14 / 30%), rgb(102 96 96 / 40%), rgb(163 160 160 / 16%)), url('./Images/heroImg3.avif')
-    }
-    .sub-heading {
-        color: #fff9f9cc;
-    }
-    .hero .intro-buttons {
-        gap: 20px;
-    }
-    .btn {
-        padding: 10px 30px;
-    }
-    .logo {
-        padding: 0 2rem;
-    }
-    .menu {
-        position: absolute;
-        right: 0;
-        padding: 0 2rem;
-        top: 75px;
-        background-image: linear-gradient(180deg, #35A99C, #53C8B6, #74D7BB);
-        display: none;
-        transition: all 0.25s;
-    }
-    .menu .menu-list {
-        flex-direction: column;
-    }
-    .hamburger {
-        display: block;
-        padding: 0 2rem;
-    }
-    .portfolio {
-        padding: 0;
-    }
-    .about {
-        flex-direction: column;
-    }
-    .about.about-text {
-        width: 90%;
-        padding: 1rem;
-    }
-    .about .about-image img {
-        width: 90%;
-        padding: 1rem;
-    }
-    .services {
-        padding: 0;
-    }
-    .my-row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        margin: 2rem 0;
-        gap: 1rem;
-    }
-    .my-row .my-col {
-        text-align: center;
-        width: 100%;
-    }
-    .contact {
-        padding: 0;
-    }
-    .contact-content {
-        flex-direction: column;
-        align-items: center;
+        padding: 4rem 5%;
         gap: 2rem;
     }
-    .contact-form-container {
-        width: 80%;
+
+    .contact {
+        padding: 4rem 5%;
     }
-    .contact-form .form-controls {
-        width: 100%;
+
+    /* Sidebar width for Tablets */
+    .menu {
+        width: 40%;
     }
-    .contact-form .form-btn {
-        width: 100%;
+}
+
+/* Tablet Portrait (768px) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 0 5%;
     }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* Slightly wider sidebar for portrait tablets */
+    .menu {
+        width: 60%;
+    }
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .my-heading {
+        font-size: 3rem;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 5rem;
+    }
+
+    .about-image {
+        order: -1;
+        /* Image on top for mobile/tab */
+        margin-bottom: 2rem;
+    }
+
+    .about-image img {
+        margin: 0 auto;
+        display: block;
+        max-width: 300px;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .contact-form-container,
     .contact-details {
-        width: 80%;
+        width: 100%;
     }
-    .footer-menu {
-        padding: 0 2rem;
+}
+
+/* Mobile Devices (480px) */
+@media screen and (max-width: 480px) {
+
+    /* Wide sidebar for mobile */
+    .menu {
+        width: 85%;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
     }
-    .footer-list-items {
-        margin: 0;
+
+    .links {
+        font-size: 1.5rem;
+        /* Readable text size */
+    }
+
+    .my-heading {
+        font-size: 2.2rem;
+    }
+
+    .greet-heading {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .intro-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .common-btn,
+    .ghost-btn {
+        width: 100%;
+        /* Full width buttons */
     }
 }

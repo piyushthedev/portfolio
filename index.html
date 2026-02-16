@@ -5,8 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Solu Kumar | Portfolio</title>
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css" />
@@ -17,16 +16,15 @@
   <!-- Navbar -->
   <header class="header">
     <nav class="navbar">
-      <div class="logo">
-        <h2 class="logo-heading">Solu Kumar</h2>
-      </div>
+      <!-- Logo Removed -->
       <div class="hamburger" id="hamburger">
-        <i class="fas fa-bars hamburger-icon"></i>
-        <i class="fas fa-times cross-icon"></i>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
       <div class="menu">
         <ul class="menu-list">
-          <li class="menu-list-items"><a class="links" href="#home">Home</a></li>
+          <li class="menu-list-items"><a class="links active-link" href="#home">Home</a></li>
           <li class="menu-list-items"><a class="links" href="#portfolio">Portfolio</a></li>
           <li class="menu-list-items"><a class="links" href="#about">About</a></li>
           <li class="menu-list-items"><a class="links" href="#services">Skills</a></li>
@@ -43,12 +41,13 @@
         <h3 class="greet-heading">Hello, I'm</h3>
         <h1 class="my-heading">Solu Kumar</h1>
         <h4 class="sub-heading">
-          B.Tech Computer Science Student | AI & Data Science Enthusiast
+          B.Tech Computer Science Student | AI & Data Science
         </h4>
+
       </div>
       <div class="intro-buttons">
         <button class="btn common-btn" onclick="window.location.href='#contact'">Hire Me</button>
-        <a href="https://drive.google.com/file/d/1aBV3GRlth_ZHc7KAzyqCNjH5xa8dDdi2/view?usp=drive_link" class="btn ghost-btn" download>Get Resume</a>
+        <button class="btn ghost-btn" id="openModalBtn">Get Resume</button>
       </div>
     </div>
   </section>
@@ -63,7 +62,7 @@
         <div class="my-col">
           <div class="my-card port-card">
             <div class="image">
-              <img src="./Images/uiux.jpg" alt="UI Design Project" />
+              <img src="https://placehold.co/600x400?text=UI+Design" alt="UI Design Project" />
             </div>
             <h3 class="greet-heading blue-text">Graphics & UI Design Intern</h3>
             <p class="small-para blue-text">Metagrafix, Patna (Jun 2024 – Jul 2024)</p>
@@ -72,7 +71,7 @@
         <div class="my-col">
           <div class="my-card port-card">
             <div class="image">
-              <img src="./Images/data_science.jpg" alt="Data Science Project" />
+              <img src="https://placehold.co/600x400?text=Data+Science" alt="Data Science Project" />
             </div>
             <h3 class="greet-heading blue-text">Data Science Intern</h3>
             <p class="small-para blue-text">CODTECH IT Solution (Remote)</p>
@@ -81,7 +80,7 @@
         <div class="my-col">
           <div class="my-card port-card">
             <div class="image">
-              <img src="./Images/ai_iot.jpg" alt="AI with IoT Project" />
+              <img src="https://placehold.co/600x400?text=AI+IoT" alt="AI with IoT Project" />
             </div>
             <h3 class="greet-heading blue-text">AI & ML with IoT Intern</h3>
             <p class="small-para blue-text">Codroid Hub Pvt Ltd, Patna</p>
@@ -96,16 +95,18 @@
     <div class="about-text">
       <h1 class="my-heading">About Me</h1>
       <p class="lead-para">
-        I’m an enthusiastic and detail-oriented B.Tech Computer Science student from Amity University, Patna.
+        I’m b.Tech Computer Science student from Amity University, Patna.
         I have hands-on experience in Artificial Intelligence, UI/UX Design, and Data Science.
         My passion lies in building innovative and user-focused solutions through technology.
       </p>
       <p>
-        I enjoy working on projects that challenge both my analytical and creative sides — from designing user interfaces in Figma to developing intelligent models with Python. My goal is to contribute to impactful and forward-thinking organizations.
+        I enjoy working on projects that challenge both my analytical and creative sides — from designing user
+        interfaces in Figma to developing intelligent models with Python. My goal is to contribute to impactful and
+        forward-thinking organizations.
       </p>
     </div>
     <div class="about-image">
-      <img src=".<img src="./mnt/data/WhatsApp Image 2025-11-14 at 00.25.57.jpeg
+      <img src="images/profile.jpg" alt="Solu Kumar" />
 
     </div>
   </section>
@@ -201,7 +202,8 @@
           <input class="form-controls" type="text" placeholder="Your Name" />
           <input class="form-controls" type="email" placeholder="Your Email" />
           <input class="form-controls" type="text" placeholder="Your Phone" />
-          <textarea class="form-controls" placeholder="Write your message" name="message" cols="30" rows="10"></textarea>
+          <textarea class="form-controls" placeholder="Write your message" name="message" cols="30"
+            rows="10"></textarea>
           <input class="form-btn btn common-btn" type="submit" value="Send Message" />
         </form>
       </div>
@@ -221,7 +223,8 @@
         </div>
         <div class="details">
           <h5 class="contact-heading">LINKEDIN</h5>
-          <p class="contact-text"><a href="https://linkedin.com/in/solu-kumar" target="_blank">linkedin.com/in/solu-kumar</a></p>
+          <p class="contact-text"><a href="https://linkedin.com/in/solu-kumar"
+              target="_blank">linkedin.com/in/solu-kumar</a></p>
         </div>
       </div>
     </div>
@@ -254,6 +257,31 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
     integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Resume Modal -->
+  <div id="resumeModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+
+      <!-- Modal Options -->
+      <div class="resume-options" id="resumeOptions">
+        <h2 class="greet-heading" style="text-align: center; margin-bottom: 2rem;">Select an Option</h2>
+        <div class="options-buttons">
+          <button class="btn common-btn" id="viewResumeBtn">View Resume</button>
+          <a href="https://drive.google.com/uc?export=download&id=1Tk0sTEAKPJFIKKlyez434aICTTkHI3HB"
+            class="btn ghost-btn">Download Resume</a>
+        </div>
+      </div>
+
+      <!-- Resume Viewer -->
+      <div class="resume-viewer" id="resumeViewer" style="display: none;">
+        <button class="btn ghost-btn back-btn" id="backToOptionsBtn" style="margin-bottom: 1rem;"><i
+            class="fas fa-arrow-left"></i> Back</button>
+        <iframe src="https://drive.google.com/file/d/1Tk0sTEAKPJFIKKlyez434aICTTkHI3HB/preview" width="100%"
+          height="500px"></iframe>
+      </div>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 
